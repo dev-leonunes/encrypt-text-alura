@@ -7,7 +7,15 @@
 body {
     box-sizing: border-box;
     background-color: #F3F5FC;
-    ;
+}
+
+header {
+    padding: 40px 0px 80px 40px;
+}
+
+header img {
+    width: 120px;
+    height: 48px;
 }
 
 .display {
