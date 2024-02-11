@@ -20,10 +20,43 @@ header img {
 
 .display {
     display: flex;
+    gap: 80px;
+}
+
+.display__processing-area {
+    padding: 0px 0px 0px 240px;
+}
+
+.display__processing-area__textarea {
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+    background: none;
+    width: 680px;
+    height: 400px;
+}
+
+.display__processing-area__warning {
+    display: flex;
+    height: 18px;
+    gap: 8px;
+    opacity: 80%;
+    padding-bottom: 16px;
+}
+
+.display__processing-area__warning p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
 }
 
 .display__processing-area__action {
     display: flex;
+    justify-content: center;
+    text-align: center;
     gap: 24px
 }
 
