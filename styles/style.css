@@ -6,11 +6,39 @@
 
 body {
     box-sizing: border-box;
-
+    background-color: #F3F5FC;
+    ;
 }
 
 .display {
     display: flex;
+}
+
+.display__processing-area__action {
+    display: flex;
+    gap: 24px
+}
+
+.display__processing-area__action__button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+#button1 {
+    border: none;
+    background-color: #0A3871;
+    color: #D8DFE8;
+}
+
+#button2 {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.display__result-area {
+    background: #FFFFFF;
 }
 
 footer {
