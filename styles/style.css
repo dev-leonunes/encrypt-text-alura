@@ -7,25 +7,25 @@
 body {
     box-sizing: border-box;
     background-color: #F3F5FC;
-    padding: 40px;
-}
-
-header {
-    padding-bottom: 80px;
-}
-
-header img {
-    width: 120px;
-    height: 48px;
 }
 
 .display {
     display: flex;
     gap: 80px;
+    padding: 40px;
 }
 
 .display__processing-area {
+    display: flex;
+    flex-direction: column;
     padding-left: 200px;
+}
+
+.display__processing-area__logo {
+    width: 120px;
+    height: 48px;
+    margin-left: -160px;
+    padding-bottom: 80px;
 }
 
 .display__processing-area__textarea {
@@ -128,4 +128,10 @@ header img {
 
 footer {
     text-align: center;
+    background-color: #0A3871;
+    color: #f6f6f6;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
