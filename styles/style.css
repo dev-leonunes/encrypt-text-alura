@@ -7,10 +7,11 @@
 body {
     box-sizing: border-box;
     background-color: #F3F5FC;
+    padding: 40px;
 }
 
 header {
-    padding: 40px 0px 80px 40px;
+    padding-bottom: 80px;
 }
 
 header img {
@@ -24,7 +25,7 @@ header img {
 }
 
 .display__processing-area {
-    padding: 0px 0px 0px 240px;
+    padding-left: 200px;
 }
 
 .display__processing-area__textarea {
@@ -64,12 +65,16 @@ header img {
     width: 328px;
     height: 67px;
     border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 
 #button1 {
     border: none;
     background-color: #0A3871;
-    color: #D8DFE8;
+    color: #ffffff;
 }
 
 #button2 {
