@@ -2,6 +2,8 @@ const textToProcessing = document.getElementsByClassName("display__processing-ar
 
 const encryptButton = document.getElementById("button1");
 const decryptButton = document.getElementById("button2");
+const copyButton = document.querySelector(".display__result-area__button");
+const resultAreaText = document.querySelector(".display__result-area__text");
 
 const getTextToProcessing = (text) => {
     text = textToProcessing[0].value;
@@ -57,19 +59,31 @@ const decrypt = (text) => {
 }
 
 const displayResult = (result) => {
-    const resultAreaText = document.querySelector(".display__result-area__text");
     const titleToHide = document.querySelector(".display__result-area__title");
     const messageToHide = document.querySelector(".display__result-area__message");
     const imgToHide = document.querySelector(".display__result-area__img");
-    const button = document.querySelector(".display__result-area__button");
-
+    
     resultAreaText.textContent = result;
-
+    
     titleToHide.remove();
     messageToHide.remove();
     imgToHide.remove();
-    button.style.visibility = "visible";
+    copyButton.textContent = "Copiar";
+    copyButton.style.visibility = "visible";
+}
+
+const copy = () => {
+    const copyText = resultAreaText.textContent;
+    
+    if (navigator.clipboard.writeText(copyText)) {
+        copyButton.textContent = "Copiado";
+    }
+
+    setInterval(function () {
+        copyButton.textContent = "Copiar"
+    }, 2500);
 }
 
 encryptButton.onclick = encrypt;
 decryptButton.onclick = decrypt;
+copyButton.onclick = copy;
