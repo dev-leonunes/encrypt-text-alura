@@ -11,12 +11,12 @@ const getTextToProcessing = (text) => {
 const processingText = (text) => {
     text = getTextToProcessing();
     
-    const textRules = /^[a-z]+$/
+    const textRules = /^[a-z ]+$/;
     
     if (!textRules.test(text)) {
-        return "Erro: O texto está fora do padrão"
+        displayResult("Erro: O texto está fora do padrão");
     } else {
-        return text
+        return text;
     }
 }
 
@@ -34,8 +34,8 @@ const encrypt = (text) => {
     const encryptedText = text.split('')
     .map(letter => encryptRules[letter] || letter)
     .join('');
-    console.log("🚀 ~ encrypt ~ encryptedText:", encryptedText)
-    return encryptedText;
+    
+    displayResult(encryptedText);
 }
 
 const decrypt = (text) => {
@@ -52,8 +52,13 @@ const decrypt = (text) => {
     const decryptedText = text.split(/(enter|imes|ai|ober|ufat)/)
     .map(part => decryptRules[part] || part)
     .join('');
-    console.log("🚀 ~ decrypt ~ decryptedText:", decryptedText)
-    return decryptedText;
+
+    displayResult(decryptedText);
+}
+
+const displayResult = (result) => {
+    const resultAreaText = document.querySelector(".display__result-area__text");
+    resultAreaText.textContent = result;
 }
 
 encryptButton.onclick = encrypt;
