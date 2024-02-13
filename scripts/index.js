@@ -1,4 +1,4 @@
-const textToProcessing = document.getElementsByClassName("display__processing-area__textarea");
+const textToProcessing = document.getElementsByClassName("display__processing-area__textarea")[0];
 
 const encryptButton = document.getElementById("button1");
 const decryptButton = document.getElementById("button2");
@@ -6,7 +6,7 @@ const copyButton = document.querySelector(".display__result-area__button");
 const resultAreaText = document.querySelector(".display__result-area__text");
 
 const getTextToProcessing = (text) => {
-    text = textToProcessing[0].value;
+    text = textToProcessing.value;
     return text;
 }
 
