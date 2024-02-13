@@ -105,7 +105,7 @@ body {
     visibility: visible;
 }
 
-.display__result-area__text {
+.display__result-area__message {
     font-weight: 400;
     font-size: 16px;
     color: #495057;
