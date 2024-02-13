@@ -11,7 +11,7 @@ const getTextToProcessing = (text) => {
 const processingText = (text) => {
     text = getTextToProcessing();
     
-    const textRules = /^[a-z ]+$/;
+    const textRules = /^[a-z\s.,!?]+$/;
     
     if (!textRules.test(text)) {
         displayResult("Erro: O texto está fora do padrão");
@@ -58,7 +58,17 @@ const decrypt = (text) => {
 
 const displayResult = (result) => {
     const resultAreaText = document.querySelector(".display__result-area__text");
+    const titleToHide = document.querySelector(".display__result-area__title");
+    const messageToHide = document.querySelector(".display__result-area__message");
+    const imgToHide = document.querySelector(".display__result-area__img");
+    const button = document.querySelector(".display__result-area__button");
+
     resultAreaText.textContent = result;
+
+    titleToHide.remove();
+    messageToHide.remove();
+    imgToHide.remove();
+    button.style.visibility = "visible";
 }
 
 encryptButton.onclick = encrypt;
