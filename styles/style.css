@@ -30,7 +30,7 @@ body {
 .display__processing-area__textarea {
     border: none;
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     color: #0A3871;
     background: none;
     width: 680px;
@@ -48,7 +48,7 @@ body {
 .display__processing-area__warning p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 18px;
     color: #495057;
 }
@@ -65,7 +65,7 @@ body {
     height: 67px;
     border-radius: 24px;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
 }
@@ -97,7 +97,7 @@ body {
 
 .display__result-area__text {
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #495057;
     width: 336px;
@@ -113,7 +113,7 @@ body {
 .display__result-area__title {
     width: 70%;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #343A40;
     visibility: visible;
     padding-left: 15%;
@@ -122,7 +122,7 @@ body {
 .display__result-area__message {
     width: 70%;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: #495057;
     visibility: visible;
     padding-left: 15%;
@@ -136,7 +136,7 @@ body {
     height: 67px;
     border-radius: 24px;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     position: absolute;
     bottom: 10px;
@@ -151,9 +151,9 @@ footer {
     text-align: center;
     background-color: #0A3871;
     color: #f6f6f6;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 400;
 }
 
@@ -210,18 +210,16 @@ footer {
     .display__result-area__title {
         width: 100%;
         padding-left: 0%;
-        white-space: nowrap;
+    }
+    
+    .display__result-area__title {
+        width: 80%;
+        padding: 10% 10% 2.5% 10%;
     }
     
     .display__result-area__message {
-        width: 100%;
-        padding-left: 0%;
-    }
-    
-    .display__result-area__button {
-        width: 90%;
-        position: relative;
-        margin-bottom: 32px;
+        width: 80%;
+        padding: 2.5% 10% 10%;
     }
 
     footer {
@@ -262,16 +260,5 @@ footer {
     .display__result-area__text {
         width: 80%;
         padding: 10%;
-    }
-
-    .display__result-area__title {
-        width: 80%;
-        white-space: normal;
-        padding: 10% 10% 2.5% 10%;
-    }
-    
-    .display__result-area__message {
-        width: 80%;
-        padding: 2.5% 10% 10%;
     }
 }
