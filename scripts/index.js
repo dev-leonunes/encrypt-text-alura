@@ -63,13 +63,14 @@ const displayResult = (result) => {
     const messageToHide = document.querySelector(".display__result-area__message");
     const imgToHide = document.querySelector(".display__result-area__img");
     
+    resultAreaText.style.display = "flex";
     resultAreaText.textContent = result;
     
     titleToHide.remove();
     messageToHide.remove();
     imgToHide.remove();
     copyButton.textContent = "Copiar";
-    copyButton.style.visibility = "visible";
+    copyButton.style.display = "flex";
 }
 
 const copy = () => {
