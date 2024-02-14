@@ -12,9 +12,9 @@ const getTextToProcessing = (text) => {
 
 const processingText = (text) => {
     text = getTextToProcessing();
-    
+
     const textRules = /^[a-z\s.,!?]+$/;
-    
+
     if (!textRules.test(text)) {
         displayResult("Erro: O texto está fora do padrão");
     } else {
@@ -34,9 +34,9 @@ const encrypt = (text) => {
     };
 
     const encryptedText = text.split('')
-    .map(letter => encryptRules[letter] || letter)
-    .join('');
-    
+        .map(letter => encryptRules[letter] || letter)
+        .join('');
+
     displayResult(encryptedText);
 }
 
@@ -52,8 +52,8 @@ const decrypt = (text) => {
     };
 
     const decryptedText = text.split(/(enter|imes|ai|ober|ufat)/)
-    .map(part => decryptRules[part] || part)
-    .join('');
+        .map(part => decryptRules[part] || part)
+        .join('');
 
     displayResult(decryptedText);
 }
@@ -62,10 +62,10 @@ const displayResult = (result) => {
     const titleToHide = document.querySelector(".display__result-area__title");
     const messageToHide = document.querySelector(".display__result-area__message");
     const imgToHide = document.querySelector(".display__result-area__img");
-    
+
     resultAreaText.style.display = "flex";
     resultAreaText.textContent = result;
-    
+
     titleToHide.remove();
     messageToHide.remove();
     imgToHide.remove();
@@ -75,7 +75,7 @@ const displayResult = (result) => {
 
 const copy = () => {
     const copyText = resultAreaText.textContent;
-    
+
     if (navigator.clipboard.writeText(copyText)) {
         copyButton.textContent = "Copiado";
     }
