@@ -103,6 +103,7 @@ body {
     width: 336px;
     padding: 32px;
     text-align: left;
+    display: none;
 }
 
 .display__result-area__img {
@@ -110,17 +111,21 @@ body {
 }
 
 .display__result-area__title {
+    width: 70%;
     font-weight: 700;
     font-size: 24px;
     color: #343A40;
     visibility: visible;
+    padding-left: 15%;
 }
 
 .display__result-area__message {
+    width: 70%;
     font-weight: 400;
     font-size: 16px;
     color: #495057;
     visibility: visible;
+    padding-left: 15%;
 }
 
 .display__result-area__button {
@@ -133,12 +138,13 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    visibility: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -149,4 +155,75 @@ footer {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .display {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .display__processing-area {
+        padding: 0px;
+    }
+
+    .display__processing-area__logo {
+        margin-left: -40px;
+        padding-bottom: 116px;
+        width: 20%;
+        height: 20%;
+        padding-top: 33px;
+    }
+
+    .display__processing-area__textarea {
+        width: 100%;
+        height: 500px;
+        padding: 0px;
+    }
+
+    .display__processing-area__warning {
+        height: 100%;
+    }
+
+    .display__processing-area__action__button {
+        width: 50%;
+        height: 67px;
+    }
+
+    .display__result-area {
+        width: 100%;
+        height: 100%;
+    }
+
+    .display__result-area__text {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .display__result-area__img {
+        display: none;
+    }
+
+    .display__result-area__title {
+        width: 100%;
+        padding-left: 0%;
+        white-space: nowrap;
+    }
+    
+    .display__result-area__message {
+        width: 100%;
+        padding-left: 0%;
+    }
+    
+    .display__result-area__button {
+        width: 90%;
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
