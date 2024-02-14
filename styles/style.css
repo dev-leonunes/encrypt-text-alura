@@ -159,6 +159,7 @@ footer {
 
 
 @media (max-width: 768px) {
+    
     .display {
         display: flex;
         flex-direction: column;
@@ -225,5 +226,51 @@ footer {
 
     footer {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 376px) {
+    .display {
+        display: flex;
+        gap: 64px;
+        padding: 24px;
+    }
+
+    .display__processing-area__logo {
+        margin-left: -33px;
+        margin-top: -33px;
+        padding-bottom: 80px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .display__processing-area__textarea {
+        height: 270px;
+    }
+
+    .display__processing-area__action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display__processing-area__action__button {
+        width: 100%;
+    }
+
+    .display__result-area__text {
+        width: 80%;
+        padding: 10%;
+    }
+
+    .display__result-area__title {
+        width: 80%;
+        white-space: normal;
+        padding: 10% 10% 2.5% 10%;
+    }
+    
+    .display__result-area__message {
+        width: 80%;
+        padding: 2.5% 10% 10%;
     }
 }
