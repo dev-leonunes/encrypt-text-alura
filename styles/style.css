@@ -226,11 +226,12 @@ footer {
 
     footer {
         width: 100%;
+        padding: 10px 0 10px 0;
     }
 }
 
 
-@media (max-width: 376px) {
+@media (max-width: 400px) {
     .display {
         display: flex;
         gap: 64px;
@@ -246,7 +247,7 @@ footer {
     }
 
     .display__processing-area__textarea {
-        height: 270px;
+        height: 269px;
     }
 
     .display__processing-area__action {
