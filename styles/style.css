@@ -159,7 +159,7 @@ footer {
 
 
 @media (max-width: 768px) {
-    
+
     .display {
         display: flex;
         flex-direction: column;
@@ -199,8 +199,8 @@ footer {
     }
 
     .display__result-area__text {
-        width: 100%;
-        padding: 32px;
+        width: 80%;
+        padding: 10%;
     }
 
     .display__result-area__img {
@@ -211,15 +211,21 @@ footer {
         width: 100%;
         padding-left: 0%;
     }
-    
+
     .display__result-area__title {
         width: 80%;
         padding: 10% 10% 2.5% 10%;
     }
-    
+
     .display__result-area__message {
         width: 80%;
         padding: 2.5% 10% 10%;
+    }
+
+    .display__result-area__button {
+        width: 90%;
+        position: relative;
+        margin-bottom: 32px;
     }
 
     footer {
