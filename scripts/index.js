@@ -82,7 +82,7 @@ const copy = () => {
 
     setInterval(function () {
         copyButton.textContent = "Copiar"
-    }, 2500);
+    }, 2000);
 }
 
 encryptButton.onclick = encrypt;
