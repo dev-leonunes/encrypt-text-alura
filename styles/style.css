@@ -29,12 +29,18 @@ body {
 
 .display__processing-area__textarea {
     border: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
-    color: #0A3871;
     background: none;
     width: 680px;
     height: 400px;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #0A3871;
+}
+
+.display__processing-area__textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #0A3871;
 }
 
 .display__processing-area__warning {
