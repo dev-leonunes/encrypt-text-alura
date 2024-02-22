@@ -1,6 +1,6 @@
 # Encrypt Text
 
-<img src="./assets/home.png" alt="print da tela iniciar do encriptador de texto" width=700px>
+<img src="./assets/homepage-print.png" alt="print da tela iniciar do encriptador de texto" width=700px>
 
 ## Sobre
 
@@ -9,6 +9,12 @@ Este projeto foi desenvolvido como parte do desafio da formação **Iniciante em
 ### Objetivo
 
 O projeto foi concebido como parte de um desafio proposto durante a formação, oferecendo aos participantes a oportunidade de aplicar e aprimorar seus conhecimentos em programação.
+
+O desafio consistia em construir uma página web responsiva com base no projeto do Figma. A proposta era garantir o aprendizado durante o desenvolvimento do projeto, evitando a simples cópia de código de professores. Além disso, o desafio incentivava a busca por resolução de problemas e a leitura de documentação.
+
+### Aprimoramentos
+
+Para aprimorar a experiência, implementei algumas pequenas mudanças na página. Adicionei um *footer* de cor sólida com pequenos ícones que são links para minhas redes sociais. Também incluí um ícone ao lado do *Title* da página, na aba do navegador.
 
 ### Como Funciona
 
