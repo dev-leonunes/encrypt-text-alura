@@ -26,7 +26,7 @@ Sinta-se à vontade para explorar e utilizar esta ferramenta interativa de encri
 
 ### Como Acessar
 
-Este projeto está disponível online e pode ser acessado [aqui](https://futurodevleo.github.io/encrypt-text-alura/)
+Este projeto está disponível online e pode ser acessado [aqui](https://dev-leonunes.github.io/encrypt-text-alura/)
 
 ### Tecnologias
 <img src="https://skillicons.dev/icons?i=html,css,js" alt="logos do html5, css3 e javascript"/>
